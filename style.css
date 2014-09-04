@@ -28,6 +28,7 @@ body a:hover{
 }
 
 /* ----- HEADER ------*/
+
 header a:hover{
 	color: #0095da;
 }
@@ -96,11 +97,18 @@ header.navbar-inverse{
 	position: relative;
 	margin-right: 50px;
 	padding: 18px;
-	background: url('images/background-tag.png') no-repeat;
+	background: #e20031;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 #tag-index{
 	margin-top: -15%;
+	text-align: center;
 }
 
 .tag-legenda p{
@@ -179,7 +187,6 @@ header.navbar-inverse{
 }
 
 #buttom-more{
-	background: url('images/buttom-more-bg.png') no-repeat;
 	padding: 10px;
 	text-align: center;
 	font-size: 16px;
@@ -280,17 +287,18 @@ header.navbar-inverse{
 
 /*------- CONTENT-HISTORIA ------*/
 .content-historia{
-
+	height: 700px;
+	overflow: hidden;
 }
 
 .img-content{
 	background: url('images/areas/content-historia.png') no-repeat;
-	width: 100%;
-	min-height: 480px;
+	height: 877px;
 }
 
 .area-historia{
-	margin-top: 13%;
+	margin-top: 20%;
+	margin-bottom: 10%;
 }
 
 .area-historia p{
@@ -306,6 +314,60 @@ header.navbar-inverse{
 	text-decoration: underline;
 }
 
+.btn-galeria{
+	clear: both;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 137px;
+	height: 56px;
+	border-radius: 14px;
+	transition: box-shadow 0.7s;
+}
+
+.btn-galeria:hover{
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.7);
+	border-radius: 14px;
+}
+
+/*------- CONTENT-SLIDE ------*/
+.area-slide{
+	margin-top: 20px;
+}
+
+.bx-wrapper{
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls-direction a{
+	margin-top: -30% !important;
+	opacity: 0.5;
+}
+
+#button-up{
+	margin-top: 10px;
+	transform: rotate(180deg);
+}
+
+/*------- CONTENT-CADASTRO ------*/
+#content-cadastro{
+	margin-top: 30px;
+	min-height: 500px;
+}
+
+#content-cadastro input{
+	margin: 10px 0px;
+}
+
+#content-cadastro textarea{
+	height: 140px !important;
+}
+
+#content-cadastro button{
+	margin-top: 10px;
+}
 
 /* ----- FOOTER ------*/
 footer{
