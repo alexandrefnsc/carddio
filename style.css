@@ -225,7 +225,7 @@ header.navbar-inverse{
 }
 
 .titulo-area h1{
-	font-size: 60px;
+	font-size: 300%;
 	color: #0099cc;
 	margin-bottom: 20px
 }
@@ -330,6 +330,12 @@ header.navbar-inverse{
 	-moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 0.7);
 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.7);
 	border-radius: 14px;
+}
+
+#float-menu{
+	position: fixed;
+	z-index: 999;
+	margin: 30px;
 }
 
 /*------- CONTENT-SLIDE ------*/
