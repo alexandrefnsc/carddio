@@ -2,6 +2,7 @@
 @import 'css/bootstrap.css';
 @import 'css/demo.css';
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 /* INICIO * CSS Reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,
@@ -17,6 +18,12 @@ div{
 }
 a:focus {outline: none;}
 /* FIM * CSS Reset */
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
 
 body{
 background-color: #FFF !important;
@@ -336,35 +343,110 @@ header.navbar-inverse{
 	position: fixed;
 	z-index: 999;
 	margin: 30px;
+	color: white;
+}
+
+#float-menu li{
+	padding: 5px 0;
+}
+
+#float-menu span{
+	font-size: 10px;
 }
 
 /*------- CONTENT-SLIDE ------*/
-.area-slide{
-	margin-top: 20px;
+#bxSlider{
+	margin-top: 0px;
 }
 
 .bx-wrapper{
-	width: 80%;
+	width: 100%;
 }
 
-.bx-wrapper .bx-controls-direction a{
+#part-galeria .bx-controls-direction a{
 	margin-top: -30% !important;
-	opacity: 0.5;
 }
 
-#button-up{
-	margin-top: 10px;
-	transform: rotate(180deg);
+#part-galeria .bx-viewport{
+	border: none !important;
+	background: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
 }
 
+#part-galeria .bx-pager{
+	top: -130px !important;
+}
+
+#part-galeria img{
+	width: 100%;
+}
+
+/*------- CONTENT-TRABALHE ------*/
+#part-trabalhe{
+	background: #FFF;
+}
+
+#part-trabalhe h1{
+	color:  white;
+}
+
+#part-trabalhe p{
+	margin-top: 12px;
+	line-height: 25px;
+}
+
+#part-trabalhe input{
+	min-width: 300px;
+}
+
+#content-trabalhe{
+	margin-top: 18%;
+}
 /*------- CONTENT-CADASTRO ------*/
+
+.input-groups{
+	margin-bottom: 30px;
+	font-size: 15px;
+}
+
+.input-groups input{
+	background: #0099cc;
+	border: none;
+	padding: 10px 20px;
+	margin-left: -10px;
+	color: #006699;
+	font-style: italic;
+	min-width: 211px;
+	margin-top: 20px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #006699;
+    font-style: italic;
+}
+
+.label-input{
+	background: #006699;
+	padding: 10px 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+	color: white;
+	display: inline-block;
+	width: 157px;
+	z-index: 999;
+	margin-top: 20px;
+
+}
+
+#btn-enviar{
+	margin-right: 4%;
+}
+
 #content-cadastro{
 	margin-top: 30px;
 	min-height: 500px;
-}
-
-#content-cadastro input{
-	margin: 10px 0px;
 }
 
 #content-cadastro textarea{
