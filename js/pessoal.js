@@ -106,6 +106,10 @@ $(document).ready(function(){
 		});
 	});
 
+	$('.custom-upload input[type=file]').change(function(){
+    $(this).next().find('input').val($(this).val());
+});
+
 	function confere(){
 		if ($('#part-trabalhe').css('top')=='-1755px') {
 			$('#float-menu').css('color', '#0099cc');

@@ -293,6 +293,22 @@ header.navbar-inverse{
 }
 
 /*------- CONTENT-HISTORIA ------*/
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(images/radio_02.png) no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(images/radio_01.png) no-repeat;
+}
+
 .content-historia{
 	height: 700px;
 	overflow: hidden;
@@ -352,6 +368,16 @@ header.navbar-inverse{
 
 #float-menu span{
 	font-size: 10px;
+}
+
+#btn-work{
+	-webkit-border-top-right-radius: 6px;
+-webkit-border-bottom-right-radius: 6px;
+-moz-border-radius-topright: 6px;
+-moz-border-radius-bottomright: 6px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+margin: -8px;
 }
 
 /*------- CONTENT-SLIDE ------*/

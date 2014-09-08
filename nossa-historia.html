@@ -60,9 +60,15 @@
 	<div class="content-historia">
 		<div id="float-menu">
 			<ul>
-				<li id="menu-01"><span class="fontawesome-circle"></span> Nossa história</li>
-				<li id="menu-02"><span class="fontawesome-circle"></span> Galeria</li>
-				<li id="menu-03"><span class="fontawesome-circle"></span> Trabalhe na Carddio</li>
+				<li id="menu-01"><input type="radio" name="radio" class="styled"  id="1" />
+					<label for="1">Nossa história</label>
+				</li>
+				<li id="menu-02"><input type="radio" name="radio" class="styled"  id="2" />
+					<label for="2">Galeria</label>
+				</li>
+				<li id="menu-03"><input type="radio" name="radio" class="css-checkbox"  id="3" />
+					<label for="3">Trabalhe na Carddio</label>
+				</li>
 			</ul>
 		</div>
 		<div class="img-content" id="part-historia">
@@ -89,10 +95,10 @@
 					<p class="col-md-10 col-xs-8">Nossa equipe tem muitas dicas para te dar, podemos te ajudara cuidar do seu coração, te ajudar a controlar seu peso e até te explicar como melhor seu sono.
 					<br><br>	Coloque seu email aqui embaixo e faça parte desse clube.</p>
 					<form class="navbar-form navbar-left" role="search">
- 						 <div class="form-group">
- 						   <input type="text" class="form-control" placeholder="Selecione o arquivo .pdf">
+ 						 <div class="form-group custom-upload">
+ 						   <input type="file" class="form-control" placeholder="Selecione o arquivo .pdf" />
  						 </div>
- 						 <button type="submit" class="btn btn-primary">Enviar</button>
+ 						 <button type="submit" class="btn btn-primary" id="btn-work">Enviar</button>
 					</form>
 				</div>
 			</div>
