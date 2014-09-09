@@ -385,11 +385,22 @@ label p{
 	font-size: 10px;
 }
 
-/*.custom-upload input{
+.custom-upload{
+	clear: both;
+	width: 295px;
+	height: 36px;
+}
+
+.custom-upload .form-true{
 	opacity: 0;
 	position: relative;
+	z-index: 999;
 }
-*/
+
+.form-fake{
+	margin-top: -54px;
+}
+
 #btn-work{
 -webkit-border-top-right-radius: 6px;
 -webkit-border-bottom-right-radius: 6px;
@@ -450,6 +461,14 @@ padding-left: 20px;
 
 #content-trabalhe{
 	margin-top: 18%;
+}
+
+#content-trabalhe p{
+	max-width: 560px;
+}
+
+#form-envio{
+	min-width: 394px;
 }
 /*------- CONTENT-CADASTRO ------*/
 
